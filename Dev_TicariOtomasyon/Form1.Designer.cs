@@ -32,19 +32,19 @@
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnUrunler = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnStoklar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnMusteriler = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnFirmalar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnAnaSayfa = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnPersoneller = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnGiderler = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnKasa = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnNotlar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnBankalar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnFaturalar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnAyarlar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnRehber = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,19 +54,19 @@
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4,
-            this.barButtonItem5,
-            this.barButtonItem6,
-            this.barButtonItem7,
-            this.barButtonItem8,
-            this.barButtonItem9,
-            this.barButtonItem10,
-            this.barButtonItem11,
-            this.barButtonItem12,
-            this.barButtonItem13});
+            this.BtnUrunler,
+            this.BtnStoklar,
+            this.BtnMusteriler,
+            this.BtnFirmalar,
+            this.BtnAnaSayfa,
+            this.BtnPersoneller,
+            this.BtnGiderler,
+            this.BtnKasa,
+            this.BtnNotlar,
+            this.BtnBankalar,
+            this.BtnFaturalar,
+            this.BtnAyarlar,
+            this.BtnRehber});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonControl1.MaxItemId = 14;
@@ -74,162 +74,163 @@
             this.ribbonControl1.OptionsMenuMinWidth = 412;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1562, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1362, 183);
             // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
+            this.ribbonPage1.Text = "TOS";
             // 
             // ribbonPageGroup1
             // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem11);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem13);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnAnaSayfa);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnUrunler);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnStoklar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnMusteriler);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnFirmalar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnPersoneller);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnGiderler);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnKasa);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnNotlar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnBankalar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnFaturalar);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnRehber);
+            this.ribbonPageGroup1.ItemLinks.Add(this.BtnAyarlar);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
-            // barButtonItem1
+            // BtnUrunler
             // 
-            this.barButtonItem1.Caption = "ÜRÜNLER";
-            this.barButtonItem1.Id = 1;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem1.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.BtnUrunler.Caption = "ÜRÜNLER";
+            this.BtnUrunler.Id = 1;
+            this.BtnUrunler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.BtnUrunler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.BtnUrunler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnUrunler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnUrunler.Name = "BtnUrunler";
             // 
-            // barButtonItem2
+            // BtnStoklar
             // 
-            this.barButtonItem2.Caption = "STOKLAR";
-            this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem2.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.BtnStoklar.Caption = "STOKLAR";
+            this.BtnStoklar.Id = 2;
+            this.BtnStoklar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.BtnStoklar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.BtnStoklar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnStoklar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnStoklar.Name = "BtnStoklar";
             // 
-            // barButtonItem3
+            // BtnMusteriler
             // 
-            this.barButtonItem3.Caption = "MÜŞTERİLER";
-            this.barButtonItem3.Id = 3;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.barButtonItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem3.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.BtnMusteriler.Caption = "MÜŞTERİLER";
+            this.BtnMusteriler.Id = 3;
+            this.BtnMusteriler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
+            this.BtnMusteriler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.BtnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnMusteriler.Name = "BtnMusteriler";
             // 
-            // barButtonItem4
+            // BtnFirmalar
             // 
-            this.barButtonItem4.Caption = "FİRMALAR";
-            this.barButtonItem4.Id = 4;
-            this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
-            this.barButtonItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem4.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.BtnFirmalar.Caption = "FİRMALAR";
+            this.BtnFirmalar.Id = 4;
+            this.BtnFirmalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.BtnFirmalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnFirmalar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnFirmalar.Name = "BtnFirmalar";
             // 
-            // barButtonItem5
+            // BtnAnaSayfa
             // 
-            this.barButtonItem5.Caption = "ANA SAYFA";
-            this.barButtonItem5.Id = 5;
-            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.barButtonItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem5.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem5.Name = "barButtonItem5";
+            this.BtnAnaSayfa.Caption = "ANA SAYFA";
+            this.BtnAnaSayfa.Id = 5;
+            this.BtnAnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.BtnAnaSayfa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
+            this.BtnAnaSayfa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnAnaSayfa.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnAnaSayfa.Name = "BtnAnaSayfa";
             // 
-            // barButtonItem6
+            // BtnPersoneller
             // 
-            this.barButtonItem6.Caption = "PERSONELLER";
-            this.barButtonItem6.Id = 6;
-            this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-            this.barButtonItem6.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem6.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem6.Name = "barButtonItem6";
+            this.BtnPersoneller.Caption = "PERSONELLER";
+            this.BtnPersoneller.Id = 6;
+            this.BtnPersoneller.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
+            this.BtnPersoneller.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+            this.BtnPersoneller.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnPersoneller.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnPersoneller.Name = "BtnPersoneller";
             // 
-            // barButtonItem7
+            // BtnGiderler
             // 
-            this.barButtonItem7.Caption = "GİDERLER";
-            this.barButtonItem7.Id = 7;
-            this.barButtonItem7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.barButtonItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-            this.barButtonItem7.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem7.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem7.Name = "barButtonItem7";
+            this.BtnGiderler.Caption = "GİDERLER";
+            this.BtnGiderler.Id = 7;
+            this.BtnGiderler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
+            this.BtnGiderler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+            this.BtnGiderler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGiderler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnGiderler.Name = "BtnGiderler";
             // 
-            // barButtonItem8
+            // BtnKasa
             // 
-            this.barButtonItem8.Caption = "KASA";
-            this.barButtonItem8.Id = 8;
-            this.barButtonItem8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
-            this.barButtonItem8.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem8.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem8.Name = "barButtonItem8";
+            this.BtnKasa.Caption = "KASA";
+            this.BtnKasa.Id = 8;
+            this.BtnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
+            this.BtnKasa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKasa.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnKasa.Name = "BtnKasa";
             // 
-            // barButtonItem9
+            // BtnNotlar
             // 
-            this.barButtonItem9.Caption = "NOTLAR";
-            this.barButtonItem9.Id = 9;
-            this.barButtonItem9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
-            this.barButtonItem9.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem9.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem9.Name = "barButtonItem9";
+            this.BtnNotlar.Caption = "NOTLAR";
+            this.BtnNotlar.Id = 9;
+            this.BtnNotlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
+            this.BtnNotlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnNotlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnNotlar.Name = "BtnNotlar";
             // 
-            // barButtonItem10
+            // BtnBankalar
             // 
-            this.barButtonItem10.Caption = "BANKALAR";
-            this.barButtonItem10.Id = 10;
-            this.barButtonItem10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
-            this.barButtonItem10.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem10.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem10.Name = "barButtonItem10";
+            this.BtnBankalar.Caption = "BANKALAR";
+            this.BtnBankalar.Id = 10;
+            this.BtnBankalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
+            this.BtnBankalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnBankalar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnBankalar.Name = "BtnBankalar";
             // 
-            // barButtonItem11
+            // BtnFaturalar
             // 
-            this.barButtonItem11.Caption = "FATURALAR";
-            this.barButtonItem11.Id = 11;
-            this.barButtonItem11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
-            this.barButtonItem11.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem11.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem11.Name = "barButtonItem11";
+            this.BtnFaturalar.Caption = "FATURALAR";
+            this.BtnFaturalar.Id = 11;
+            this.BtnFaturalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
+            this.BtnFaturalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnFaturalar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnFaturalar.Name = "BtnFaturalar";
             // 
-            // barButtonItem12
+            // BtnAyarlar
             // 
-            this.barButtonItem12.Caption = "AYARLAR";
-            this.barButtonItem12.Id = 12;
-            this.barButtonItem12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
-            this.barButtonItem12.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem12.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem12.Name = "barButtonItem12";
+            this.BtnAyarlar.Caption = "AYARLAR";
+            this.BtnAyarlar.Id = 12;
+            this.BtnAyarlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
+            this.BtnAyarlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnAyarlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnAyarlar.Name = "BtnAyarlar";
             // 
-            // barButtonItem13
+            // BtnRehber
             // 
-            this.barButtonItem13.Caption = "REHBER";
-            this.barButtonItem13.Id = 13;
-            this.barButtonItem13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
-            this.barButtonItem13.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.barButtonItem13.ItemAppearance.Normal.Options.UseFont = true;
-            this.barButtonItem13.Name = "barButtonItem13";
+            this.BtnRehber.Caption = "REHBER";
+            this.BtnRehber.Id = 13;
+            this.BtnRehber.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
+            this.BtnRehber.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnRehber.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnRehber.Name = "BtnRehber";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1562, 863);
+            this.ClientSize = new System.Drawing.Size(1362, 763);
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
@@ -242,19 +243,19 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem9;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem10;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem11;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem13;
+        private DevExpress.XtraBars.BarButtonItem BtnUrunler;
+        private DevExpress.XtraBars.BarButtonItem BtnStoklar;
+        private DevExpress.XtraBars.BarButtonItem BtnMusteriler;
+        private DevExpress.XtraBars.BarButtonItem BtnFirmalar;
+        private DevExpress.XtraBars.BarButtonItem BtnAnaSayfa;
+        private DevExpress.XtraBars.BarButtonItem BtnPersoneller;
+        private DevExpress.XtraBars.BarButtonItem BtnGiderler;
+        private DevExpress.XtraBars.BarButtonItem BtnKasa;
+        private DevExpress.XtraBars.BarButtonItem BtnNotlar;
+        private DevExpress.XtraBars.BarButtonItem BtnBankalar;
+        private DevExpress.XtraBars.BarButtonItem BtnFaturalar;
+        private DevExpress.XtraBars.BarButtonItem BtnAyarlar;
+        private DevExpress.XtraBars.BarButtonItem BtnRehber;
     }
 }
 
