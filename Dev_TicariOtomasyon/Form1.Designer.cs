@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.BtnUrunler = new DevExpress.XtraBars.BarButtonItem();
             this.BtnStoklar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnMusteriler = new DevExpress.XtraBars.BarButtonItem();
@@ -45,7 +44,11 @@
             this.BtnFaturalar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnAyarlar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnRehber = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -68,13 +71,137 @@
             this.BtnAyarlar,
             this.BtnRehber});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControl1.MaxItemId = 14;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 412;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1362, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1281, 183);
+            // 
+            // BtnUrunler
+            // 
+            this.BtnUrunler.Caption = "ÜRÜNLER";
+            this.BtnUrunler.Id = 1;
+            this.BtnUrunler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnUrunler.ImageOptions.Image")));
+            this.BtnUrunler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnUrunler.ImageOptions.LargeImage")));
+            this.BtnUrunler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnUrunler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnUrunler.Name = "BtnUrunler";
+            this.BtnUrunler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnUrunler_ItemClick);
+            // 
+            // BtnStoklar
+            // 
+            this.BtnStoklar.Caption = "STOKLAR";
+            this.BtnStoklar.Id = 2;
+            this.BtnStoklar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnStoklar.ImageOptions.Image")));
+            this.BtnStoklar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnStoklar.ImageOptions.LargeImage")));
+            this.BtnStoklar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnStoklar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnStoklar.Name = "BtnStoklar";
+            // 
+            // BtnMusteriler
+            // 
+            this.BtnMusteriler.Caption = "MÜŞTERİLER";
+            this.BtnMusteriler.Id = 3;
+            this.BtnMusteriler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnMusteriler.ImageOptions.Image")));
+            this.BtnMusteriler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMusteriler.ImageOptions.LargeImage")));
+            this.BtnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnMusteriler.Name = "BtnMusteriler";
+            // 
+            // BtnFirmalar
+            // 
+            this.BtnFirmalar.Caption = "FİRMALAR";
+            this.BtnFirmalar.Id = 4;
+            this.BtnFirmalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnFirmalar.ImageOptions.SvgImage")));
+            this.BtnFirmalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnFirmalar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnFirmalar.Name = "BtnFirmalar";
+            // 
+            // BtnAnaSayfa
+            // 
+            this.BtnAnaSayfa.Caption = "ANA SAYFA";
+            this.BtnAnaSayfa.Id = 5;
+            this.BtnAnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnAnaSayfa.ImageOptions.Image")));
+            this.BtnAnaSayfa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnAnaSayfa.ImageOptions.LargeImage")));
+            this.BtnAnaSayfa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnAnaSayfa.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnAnaSayfa.Name = "BtnAnaSayfa";
+            // 
+            // BtnPersoneller
+            // 
+            this.BtnPersoneller.Caption = "PERSONELLER";
+            this.BtnPersoneller.Id = 6;
+            this.BtnPersoneller.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnPersoneller.ImageOptions.Image")));
+            this.BtnPersoneller.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnPersoneller.ImageOptions.LargeImage")));
+            this.BtnPersoneller.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnPersoneller.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnPersoneller.Name = "BtnPersoneller";
+            // 
+            // BtnGiderler
+            // 
+            this.BtnGiderler.Caption = "GİDERLER";
+            this.BtnGiderler.Id = 7;
+            this.BtnGiderler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGiderler.ImageOptions.Image")));
+            this.BtnGiderler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGiderler.ImageOptions.LargeImage")));
+            this.BtnGiderler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGiderler.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnGiderler.Name = "BtnGiderler";
+            // 
+            // BtnKasa
+            // 
+            this.BtnKasa.Caption = "KASA";
+            this.BtnKasa.Id = 8;
+            this.BtnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnKasa.ImageOptions.SvgImage")));
+            this.BtnKasa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKasa.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnKasa.Name = "BtnKasa";
+            // 
+            // BtnNotlar
+            // 
+            this.BtnNotlar.Caption = "NOTLAR";
+            this.BtnNotlar.Id = 9;
+            this.BtnNotlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnNotlar.ImageOptions.SvgImage")));
+            this.BtnNotlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnNotlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnNotlar.Name = "BtnNotlar";
+            // 
+            // BtnBankalar
+            // 
+            this.BtnBankalar.Caption = "BANKALAR";
+            this.BtnBankalar.Id = 10;
+            this.BtnBankalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnBankalar.ImageOptions.SvgImage")));
+            this.BtnBankalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnBankalar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnBankalar.Name = "BtnBankalar";
+            // 
+            // BtnFaturalar
+            // 
+            this.BtnFaturalar.Caption = "FATURALAR";
+            this.BtnFaturalar.Id = 11;
+            this.BtnFaturalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnFaturalar.ImageOptions.SvgImage")));
+            this.BtnFaturalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnFaturalar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnFaturalar.Name = "BtnFaturalar";
+            // 
+            // BtnAyarlar
+            // 
+            this.BtnAyarlar.Caption = "AYARLAR";
+            this.BtnAyarlar.Id = 12;
+            this.BtnAyarlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnAyarlar.ImageOptions.SvgImage")));
+            this.BtnAyarlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnAyarlar.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnAyarlar.Name = "BtnAyarlar";
+            // 
+            // BtnRehber
+            // 
+            this.BtnRehber.Caption = "REHBER";
+            this.BtnRehber.Id = 13;
+            this.BtnRehber.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnRehber.ImageOptions.SvgImage")));
+            this.BtnRehber.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnRehber.ItemAppearance.Normal.Options.UseFont = true;
+            this.BtnRehber.Name = "BtnRehber";
             // 
             // ribbonPage1
             // 
@@ -100,139 +227,22 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.BtnAyarlar);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             // 
-            // BtnUrunler
+            // xtraTabbedMdiManager1
             // 
-            this.BtnUrunler.Caption = "ÜRÜNLER";
-            this.BtnUrunler.Id = 1;
-            this.BtnUrunler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.BtnUrunler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.BtnUrunler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnUrunler.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnUrunler.Name = "BtnUrunler";
-            // 
-            // BtnStoklar
-            // 
-            this.BtnStoklar.Caption = "STOKLAR";
-            this.BtnStoklar.Id = 2;
-            this.BtnStoklar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.BtnStoklar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.BtnStoklar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnStoklar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnStoklar.Name = "BtnStoklar";
-            // 
-            // BtnMusteriler
-            // 
-            this.BtnMusteriler.Caption = "MÜŞTERİLER";
-            this.BtnMusteriler.Id = 3;
-            this.BtnMusteriler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.BtnMusteriler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.BtnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnMusteriler.Name = "BtnMusteriler";
-            // 
-            // BtnFirmalar
-            // 
-            this.BtnFirmalar.Caption = "FİRMALAR";
-            this.BtnFirmalar.Id = 4;
-            this.BtnFirmalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
-            this.BtnFirmalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnFirmalar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnFirmalar.Name = "BtnFirmalar";
-            // 
-            // BtnAnaSayfa
-            // 
-            this.BtnAnaSayfa.Caption = "ANA SAYFA";
-            this.BtnAnaSayfa.Id = 5;
-            this.BtnAnaSayfa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
-            this.BtnAnaSayfa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
-            this.BtnAnaSayfa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnAnaSayfa.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnAnaSayfa.Name = "BtnAnaSayfa";
-            // 
-            // BtnPersoneller
-            // 
-            this.BtnPersoneller.Caption = "PERSONELLER";
-            this.BtnPersoneller.Id = 6;
-            this.BtnPersoneller.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
-            this.BtnPersoneller.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-            this.BtnPersoneller.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnPersoneller.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnPersoneller.Name = "BtnPersoneller";
-            // 
-            // BtnGiderler
-            // 
-            this.BtnGiderler.Caption = "GİDERLER";
-            this.BtnGiderler.Id = 7;
-            this.BtnGiderler.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.Image")));
-            this.BtnGiderler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-            this.BtnGiderler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGiderler.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnGiderler.Name = "BtnGiderler";
-            // 
-            // BtnKasa
-            // 
-            this.BtnKasa.Caption = "KASA";
-            this.BtnKasa.Id = 8;
-            this.BtnKasa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem8.ImageOptions.SvgImage")));
-            this.BtnKasa.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnKasa.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnKasa.Name = "BtnKasa";
-            // 
-            // BtnNotlar
-            // 
-            this.BtnNotlar.Caption = "NOTLAR";
-            this.BtnNotlar.Id = 9;
-            this.BtnNotlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem9.ImageOptions.SvgImage")));
-            this.BtnNotlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnNotlar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnNotlar.Name = "BtnNotlar";
-            // 
-            // BtnBankalar
-            // 
-            this.BtnBankalar.Caption = "BANKALAR";
-            this.BtnBankalar.Id = 10;
-            this.BtnBankalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem10.ImageOptions.SvgImage")));
-            this.BtnBankalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnBankalar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnBankalar.Name = "BtnBankalar";
-            // 
-            // BtnFaturalar
-            // 
-            this.BtnFaturalar.Caption = "FATURALAR";
-            this.BtnFaturalar.Id = 11;
-            this.BtnFaturalar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem11.ImageOptions.SvgImage")));
-            this.BtnFaturalar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnFaturalar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnFaturalar.Name = "BtnFaturalar";
-            // 
-            // BtnAyarlar
-            // 
-            this.BtnAyarlar.Caption = "AYARLAR";
-            this.BtnAyarlar.Id = 12;
-            this.BtnAyarlar.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem12.ImageOptions.SvgImage")));
-            this.BtnAyarlar.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnAyarlar.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnAyarlar.Name = "BtnAyarlar";
-            // 
-            // BtnRehber
-            // 
-            this.BtnRehber.Caption = "REHBER";
-            this.BtnRehber.Id = 13;
-            this.BtnRehber.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem13.ImageOptions.SvgImage")));
-            this.BtnRehber.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnRehber.ItemAppearance.Normal.Options.UseFont = true;
-            this.BtnRehber.Name = "BtnRehber";
+            this.xtraTabbedMdiManager1.MdiParent = this;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 763);
+            this.ClientSize = new System.Drawing.Size(1281, 763);
             this.Controls.Add(this.ribbonControl1);
+            this.IsMdiContainer = true;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,6 +266,7 @@
         private DevExpress.XtraBars.BarButtonItem BtnFaturalar;
         private DevExpress.XtraBars.BarButtonItem BtnAyarlar;
         private DevExpress.XtraBars.BarButtonItem BtnRehber;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
     }
 }
 
