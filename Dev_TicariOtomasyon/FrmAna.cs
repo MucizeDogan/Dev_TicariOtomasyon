@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Dev_TicariOtomasyon
 {
-    public partial class Form1 : Form
+    public partial class FrmAna : Form
     {
-        public Form1()
+        public FrmAna()
         {
             InitializeComponent();
         }
@@ -27,6 +27,16 @@ namespace Dev_TicariOtomasyon
                 fr.Show();
             }
             
+        }
+        FrmMusteriler frmMusteriler;
+        private void BtnMusteriler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (frmMusteriler==null)
+            {
+                frmMusteriler=new FrmMusteriler();
+                frmMusteriler.MdiParent = this;
+                frmMusteriler.Show();
+            }
         }
     }
 }

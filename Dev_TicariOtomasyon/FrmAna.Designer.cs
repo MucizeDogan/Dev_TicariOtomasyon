@@ -1,6 +1,6 @@
 ﻿namespace Dev_TicariOtomasyon
 {
-    partial class Form1
+    partial class FrmAna
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAna));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.BtnUrunler = new DevExpress.XtraBars.BarButtonItem();
             this.BtnStoklar = new DevExpress.XtraBars.BarButtonItem();
@@ -77,7 +77,7 @@
             this.ribbonControl1.OptionsMenuMinWidth = 412;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1282, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1924, 183);
             // 
             // BtnUrunler
             // 
@@ -109,6 +109,7 @@
             this.BtnMusteriler.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnMusteriler.ItemAppearance.Normal.Options.UseFont = true;
             this.BtnMusteriler.Name = "BtnMusteriler";
+            this.BtnMusteriler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriler_ItemClick);
             // 
             // BtnFirmalar
             // 
@@ -231,16 +232,17 @@
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
-            // Form1
+            // FrmAna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1282, 1055);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Name = "FrmAna";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

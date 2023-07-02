@@ -71,7 +71,7 @@
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(910, 802);
+            this.gridControl1.Size = new System.Drawing.Size(1683, 802);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -105,9 +105,9 @@
             this.groupControl1.Controls.Add(this.Txtid);
             this.groupControl1.Controls.Add(this.MskYil);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(911, 0);
+            this.groupControl1.Location = new System.Drawing.Point(1689, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(343, 800);
+            this.groupControl1.Size = new System.Drawing.Size(340, 800);
             this.groupControl1.TabIndex = 1;
             // 
             // BtnSil
@@ -153,7 +153,6 @@
             this.RchDetay.Size = new System.Drawing.Size(187, 112);
             this.RchDetay.TabIndex = 8;
             this.RchDetay.Text = "";
-           // this.RchDetay.TextChanged += new System.EventHandler(this.RchDetay_TextChanged);
             // 
             // labelControl9
             // 
@@ -164,7 +163,6 @@
             this.labelControl9.Size = new System.Drawing.Size(50, 21);
             this.labelControl9.TabIndex = 16;
             this.labelControl9.Text = "Detay:";
-           // this.labelControl9.Click += new System.EventHandler(this.labelControl9_Click);
             // 
             // TxtSatisFiyat
             // 
@@ -174,7 +172,6 @@
             this.TxtSatisFiyat.Properties.Appearance.Options.UseFont = true;
             this.TxtSatisFiyat.Size = new System.Drawing.Size(187, 28);
             this.TxtSatisFiyat.TabIndex = 7;
-           // this.TxtSatisFiyat.EditValueChanged += new System.EventHandler(this.TxtSatisFiyat_EditValueChanged);
             // 
             // labelControl8
             // 
@@ -185,7 +182,6 @@
             this.labelControl8.Size = new System.Drawing.Size(83, 21);
             this.labelControl8.TabIndex = 14;
             this.labelControl8.Text = "Satış Fiyat:";
-            //this.labelControl8.Click += new System.EventHandler(this.labelControl8_Click);
             // 
             // labelControl7
             // 
@@ -196,7 +192,6 @@
             this.labelControl7.Size = new System.Drawing.Size(41, 21);
             this.labelControl7.TabIndex = 13;
             this.labelControl7.Text = "Adet:";
-           // this.labelControl7.Click += new System.EventHandler(this.labelControl7_Click);
             // 
             // labelControl6
             // 
@@ -207,7 +202,6 @@
             this.labelControl6.Size = new System.Drawing.Size(24, 21);
             this.labelControl6.TabIndex = 12;
             this.labelControl6.Text = "Yıl:";
-           // this.labelControl6.Click += new System.EventHandler(this.labelControl6_Click);
             // 
             // TxtModel
             // 
@@ -217,7 +211,6 @@
             this.TxtModel.Properties.Appearance.Options.UseFont = true;
             this.TxtModel.Size = new System.Drawing.Size(187, 28);
             this.TxtModel.TabIndex = 3;
-            //this.TxtModel.EditValueChanged += new System.EventHandler(this.TxtModel_EditValueChanged);
             // 
             // labelControl5
             // 
@@ -228,7 +221,6 @@
             this.labelControl5.Size = new System.Drawing.Size(50, 21);
             this.labelControl5.TabIndex = 10;
             this.labelControl5.Text = "Model:";
-           //this.labelControl5.Click += new System.EventHandler(this.labelControl5_Click);
             // 
             // NmrAdet
             // 
@@ -237,7 +229,6 @@
             this.NmrAdet.Name = "NmrAdet";
             this.NmrAdet.Size = new System.Drawing.Size(182, 28);
             this.NmrAdet.TabIndex = 5;
-            
             // 
             // TxtAlisfiyat
             // 
@@ -247,7 +238,6 @@
             this.TxtAlisfiyat.Properties.Appearance.Options.UseFont = true;
             this.TxtAlisfiyat.Size = new System.Drawing.Size(187, 28);
             this.TxtAlisfiyat.TabIndex = 6;
-            
             // 
             // labelControl4
             // 
@@ -258,7 +248,6 @@
             this.labelControl4.Size = new System.Drawing.Size(74, 21);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "Alış Fiyat:";
-            
             // 
             // TxtMarka
             // 
@@ -268,7 +257,6 @@
             this.TxtMarka.Properties.Appearance.Options.UseFont = true;
             this.TxtMarka.Size = new System.Drawing.Size(187, 28);
             this.TxtMarka.TabIndex = 2;
-            
             // 
             // labelControl3
             // 
@@ -279,7 +267,6 @@
             this.labelControl3.Size = new System.Drawing.Size(51, 21);
             this.labelControl3.TabIndex = 5;
             this.labelControl3.Text = "Marka:";
-            
             // 
             // TxtAd
             // 
@@ -289,7 +276,6 @@
             this.TxtAd.Properties.Appearance.Options.UseFont = true;
             this.TxtAd.Size = new System.Drawing.Size(187, 28);
             this.TxtAd.TabIndex = 1;
-           
             // 
             // labelControl2
             // 
@@ -300,7 +286,6 @@
             this.labelControl2.Size = new System.Drawing.Size(26, 21);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Ad:";
-           
             // 
             // Txtid
             // 
@@ -310,7 +295,6 @@
             this.Txtid.Properties.Appearance.Options.UseFont = true;
             this.Txtid.Size = new System.Drawing.Size(187, 28);
             this.Txtid.TabIndex = 2;
-           
             // 
             // MskYil
             // 
@@ -321,7 +305,6 @@
             this.MskYil.Size = new System.Drawing.Size(187, 28);
             this.MskYil.TabIndex = 4;
             this.MskYil.ValidatingType = typeof(int);
-           
             // 
             // labelControl1
             // 
@@ -332,13 +315,12 @@
             this.labelControl1.Size = new System.Drawing.Size(24, 21);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID:";
-            
             // 
             // FrmUrunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1249, 803);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.gridControl1);
             this.Name = "FrmUrunler";
