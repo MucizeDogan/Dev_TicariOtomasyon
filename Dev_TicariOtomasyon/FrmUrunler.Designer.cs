@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUrunler));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -66,6 +67,9 @@
             // 
             // gridControl1
             // 
+            gridLevelNode1.RelationName = "Level1";
+            this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
+            gridLevelNode1});
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -78,7 +82,6 @@
             // 
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowFooter = true;
             // 
             // groupControl1
             // 
@@ -114,15 +117,16 @@
             this.BtnKaydetUrun.Location = new System.Drawing.Point(111, 470);
             this.BtnKaydetUrun.Name = "BtnKaydetUrun";
             this.BtnKaydetUrun.Size = new System.Drawing.Size(187, 40);
-            this.BtnKaydetUrun.TabIndex = 18;
+            this.BtnKaydetUrun.TabIndex = 9;
             this.BtnKaydetUrun.Text = "Kaydet";
+            this.BtnKaydetUrun.Click += new System.EventHandler(this.BtnKaydetUrun_Click);
             // 
             // RchDetay
             // 
             this.RchDetay.Location = new System.Drawing.Point(111, 341);
             this.RchDetay.Name = "RchDetay";
             this.RchDetay.Size = new System.Drawing.Size(187, 123);
-            this.RchDetay.TabIndex = 17;
+            this.RchDetay.TabIndex = 8;
             this.RchDetay.Text = "";
             // 
             // labelControl9
@@ -142,7 +146,7 @@
             this.TxtSatisFiyat.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtSatisFiyat.Properties.Appearance.Options.UseFont = true;
             this.TxtSatisFiyat.Size = new System.Drawing.Size(187, 28);
-            this.TxtSatisFiyat.TabIndex = 15;
+            this.TxtSatisFiyat.TabIndex = 7;
             // 
             // labelControl8
             // 
@@ -181,7 +185,7 @@
             this.TxtModel.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtModel.Properties.Appearance.Options.UseFont = true;
             this.TxtModel.Size = new System.Drawing.Size(187, 28);
-            this.TxtModel.TabIndex = 11;
+            this.TxtModel.TabIndex = 3;
             // 
             // labelControl5
             // 
@@ -199,7 +203,7 @@
             this.NmrAdet.Location = new System.Drawing.Point(111, 238);
             this.NmrAdet.Name = "NmrAdet";
             this.NmrAdet.Size = new System.Drawing.Size(182, 29);
-            this.NmrAdet.TabIndex = 9;
+            this.NmrAdet.TabIndex = 5;
             // 
             // TxtAlisfiyat
             // 
@@ -208,7 +212,7 @@
             this.TxtAlisfiyat.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAlisfiyat.Properties.Appearance.Options.UseFont = true;
             this.TxtAlisfiyat.Size = new System.Drawing.Size(187, 28);
-            this.TxtAlisfiyat.TabIndex = 8;
+            this.TxtAlisfiyat.TabIndex = 6;
             // 
             // labelControl4
             // 
@@ -227,7 +231,7 @@
             this.TxtMarka.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtMarka.Properties.Appearance.Options.UseFont = true;
             this.TxtMarka.Size = new System.Drawing.Size(187, 28);
-            this.TxtMarka.TabIndex = 6;
+            this.TxtMarka.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -246,7 +250,7 @@
             this.TxtAd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtAd.Properties.Appearance.Options.UseFont = true;
             this.TxtAd.Size = new System.Drawing.Size(187, 28);
-            this.TxtAd.TabIndex = 4;
+            this.TxtAd.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -260,6 +264,7 @@
             // 
             // Txtid
             // 
+            this.Txtid.Enabled = false;
             this.Txtid.Location = new System.Drawing.Point(111, 53);
             this.Txtid.Name = "Txtid";
             this.Txtid.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -274,7 +279,7 @@
             this.MskYil.Mask = "0000";
             this.MskYil.Name = "MskYil";
             this.MskYil.Size = new System.Drawing.Size(187, 29);
-            this.MskYil.TabIndex = 1;
+            this.MskYil.TabIndex = 4;
             this.MskYil.ValidatingType = typeof(int);
             // 
             // labelControl1
