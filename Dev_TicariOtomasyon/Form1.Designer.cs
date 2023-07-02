@@ -77,7 +77,7 @@
             this.ribbonControl1.OptionsMenuMinWidth = 412;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1281, 183);
+            this.ribbonControl1.Size = new System.Drawing.Size(1282, 183);
             // 
             // BtnUrunler
             // 
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 763);
+            this.ClientSize = new System.Drawing.Size(1282, 1055);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "Form1";
