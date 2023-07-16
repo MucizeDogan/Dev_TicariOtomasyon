@@ -30,6 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMusteriler));
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.vergiil = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cmbilce = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cmbil = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.mskTC = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
             this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
@@ -47,31 +59,148 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.Txtid = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.cmbilce = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cmbil = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.mskTC = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.TxtVergiil = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vergiil.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbilce.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbil.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtid.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbilce.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbil.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVergiil.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Location = new System.Drawing.Point(-3, 0);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1686, 802);
+            this.gridControl1.TabIndex = 2;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.vergiil);
+            this.groupControl1.Controls.Add(this.cmbilce);
+            this.groupControl1.Controls.Add(this.cmbil);
+            this.groupControl1.Controls.Add(this.mskTC);
+            this.groupControl1.Controls.Add(this.maskedTextBox2);
+            this.groupControl1.Controls.Add(this.maskedTextBox1);
+            this.groupControl1.Controls.Add(this.labelControl11);
+            this.groupControl1.Controls.Add(this.labelControl10);
+            this.groupControl1.Controls.Add(this.BtnSil);
+            this.groupControl1.Controls.Add(this.BtnGuncelle);
+            this.groupControl1.Controls.Add(this.BtnKaydet);
+            this.groupControl1.Controls.Add(this.rchAdres);
+            this.groupControl1.Controls.Add(this.labelControl9);
+            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Controls.Add(this.labelControl7);
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Controls.Add(this.TxtMail);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.TxtSoyad);
+            this.groupControl1.Controls.Add(this.labelControl3);
+            this.groupControl1.Controls.Add(this.TxtAd);
+            this.groupControl1.Controls.Add(this.labelControl2);
+            this.groupControl1.Controls.Add(this.Txtid);
+            this.groupControl1.Controls.Add(this.labelControl1);
+            this.groupControl1.Location = new System.Drawing.Point(1689, 0);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(340, 800);
+            this.groupControl1.TabIndex = 6;
+            // 
+            // vergiil
+            // 
+            this.vergiil.Location = new System.Drawing.Point(104, 478);
+            this.vergiil.Name = "vergiil";
+            this.vergiil.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.vergiil.Properties.Appearance.Options.UseFont = true;
+            this.vergiil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.vergiil.Size = new System.Drawing.Size(184, 28);
+            this.vergiil.TabIndex = 28;
+            // 
+            // cmbilce
+            // 
+            this.cmbilce.Location = new System.Drawing.Point(104, 346);
+            this.cmbilce.Name = "cmbilce";
+            this.cmbilce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbilce.Properties.Appearance.Options.UseFont = true;
+            this.cmbilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbilce.Size = new System.Drawing.Size(184, 28);
+            this.cmbilce.TabIndex = 27;
+            // 
+            // cmbil
+            // 
+            this.cmbil.Location = new System.Drawing.Point(104, 310);
+            this.cmbil.Name = "cmbil";
+            this.cmbil.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbil.Properties.Appearance.Options.UseFont = true;
+            this.cmbil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbil.Size = new System.Drawing.Size(184, 28);
+            this.cmbil.TabIndex = 26;
+            // 
+            // mskTC
+            // 
+            this.mskTC.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.mskTC.Location = new System.Drawing.Point(104, 235);
+            this.mskTC.Mask = "00000000000";
+            this.mskTC.Name = "mskTC";
+            this.mskTC.Size = new System.Drawing.Size(184, 28);
+            this.mskTC.TabIndex = 25;
+            this.mskTC.ValidatingType = typeof(int);
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBox2.Location = new System.Drawing.Point(104, 195);
+            this.maskedTextBox2.Mask = "(999) 000-0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(184, 28);
+            this.maskedTextBox2.TabIndex = 24;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBox1.Location = new System.Drawing.Point(104, 156);
+            this.maskedTextBox1.Mask = "(999) 000-0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(184, 28);
+            this.maskedTextBox1.TabIndex = 23;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(36, 481);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(59, 21);
+            this.labelControl11.TabIndex = 22;
+            this.labelControl11.Text = "Vergi İl:";
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(62, 347);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(33, 21);
+            this.labelControl10.TabIndex = 20;
+            this.labelControl10.Text = "İlçe:";
             // 
             // BtnSil
             // 
@@ -83,7 +212,6 @@
             this.BtnSil.Size = new System.Drawing.Size(187, 40);
             this.BtnSil.TabIndex = 18;
             this.BtnSil.Text = "Sil";
-            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGuncelle
             // 
@@ -95,7 +223,6 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(187, 40);
             this.BtnGuncelle.TabIndex = 17;
             this.BtnGuncelle.Text = "Güncelle";
-            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnKaydet
             // 
@@ -107,7 +234,6 @@
             this.BtnKaydet.Size = new System.Drawing.Size(187, 40);
             this.BtnKaydet.TabIndex = 9;
             this.BtnKaydet.Text = "Kaydet";
-            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // rchAdres
             // 
@@ -243,134 +369,6 @@
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "ID:";
             // 
-            // groupControl1
-            // 
-            this.groupControl1.Controls.Add(this.cmbilce);
-            this.groupControl1.Controls.Add(this.cmbil);
-            this.groupControl1.Controls.Add(this.mskTC);
-            this.groupControl1.Controls.Add(this.maskedTextBox2);
-            this.groupControl1.Controls.Add(this.maskedTextBox1);
-            this.groupControl1.Controls.Add(this.TxtVergiil);
-            this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.BtnSil);
-            this.groupControl1.Controls.Add(this.BtnGuncelle);
-            this.groupControl1.Controls.Add(this.BtnKaydet);
-            this.groupControl1.Controls.Add(this.rchAdres);
-            this.groupControl1.Controls.Add(this.labelControl9);
-            this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Controls.Add(this.labelControl7);
-            this.groupControl1.Controls.Add(this.labelControl6);
-            this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Controls.Add(this.TxtMail);
-            this.groupControl1.Controls.Add(this.labelControl4);
-            this.groupControl1.Controls.Add(this.TxtSoyad);
-            this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.TxtAd);
-            this.groupControl1.Controls.Add(this.labelControl2);
-            this.groupControl1.Controls.Add(this.Txtid);
-            this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(1689, 0);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(340, 800);
-            this.groupControl1.TabIndex = 3;
-            // 
-            // cmbilce
-            // 
-            this.cmbilce.Location = new System.Drawing.Point(104, 346);
-            this.cmbilce.Name = "cmbilce";
-            this.cmbilce.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbilce.Properties.Appearance.Options.UseFont = true;
-            this.cmbilce.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbilce.Size = new System.Drawing.Size(184, 28);
-            this.cmbilce.TabIndex = 27;
-            // 
-            // cmbil
-            // 
-            this.cmbil.Location = new System.Drawing.Point(104, 310);
-            this.cmbil.Name = "cmbil";
-            this.cmbil.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cmbil.Properties.Appearance.Options.UseFont = true;
-            this.cmbil.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbil.Size = new System.Drawing.Size(184, 28);
-            this.cmbil.TabIndex = 26;
-            this.cmbil.SelectedIndexChanged += new System.EventHandler(this.cmbil_SelectedIndexChanged);
-            // 
-            // mskTC
-            // 
-            this.mskTC.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.mskTC.Location = new System.Drawing.Point(104, 235);
-            this.mskTC.Mask = "00000000000";
-            this.mskTC.Name = "mskTC";
-            this.mskTC.Size = new System.Drawing.Size(184, 28);
-            this.mskTC.TabIndex = 25;
-            this.mskTC.ValidatingType = typeof(int);
-            // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(104, 195);
-            this.maskedTextBox2.Mask = "(999) 000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(184, 28);
-            this.maskedTextBox2.TabIndex = 24;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.maskedTextBox1.Location = new System.Drawing.Point(104, 156);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(184, 28);
-            this.maskedTextBox1.TabIndex = 23;
-            // 
-            // TxtVergiil
-            // 
-            this.TxtVergiil.Location = new System.Drawing.Point(104, 478);
-            this.TxtVergiil.Name = "TxtVergiil";
-            this.TxtVergiil.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtVergiil.Properties.Appearance.Options.UseFont = true;
-            this.TxtVergiil.Size = new System.Drawing.Size(184, 28);
-            this.TxtVergiil.TabIndex = 21;
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(36, 481);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(59, 21);
-            this.labelControl11.TabIndex = 22;
-            this.labelControl11.Text = "Vergi İl:";
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(62, 347);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(33, 21);
-            this.labelControl10.TabIndex = 20;
-            this.labelControl10.Text = "İlçe:";
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(-3, 0);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1686, 802);
-            this.gridControl1.TabIndex = 2;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
-            // 
             // FrmMusteriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -381,25 +379,36 @@
             this.Name = "FrmMusteriler";
             this.Text = "Müşteriler";
             this.Load += new System.EventHandler(this.FrmMusteriler_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vergiil.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbilce.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbil.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtMail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Txtid.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbilce.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbil.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtVergiil.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.ComboBoxEdit vergiil;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbilce;
+        private DevExpress.XtraEditors.ComboBoxEdit cmbil;
+        private System.Windows.Forms.MaskedTextBox mskTC;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.SimpleButton BtnSil;
         private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
         private DevExpress.XtraEditors.SimpleButton BtnKaydet;
@@ -417,17 +426,5 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit Txtid;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.TextEdit TxtVergiil;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbilce;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbil;
-        private System.Windows.Forms.MaskedTextBox mskTC;
-        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }

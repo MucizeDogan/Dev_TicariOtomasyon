@@ -32,6 +32,7 @@ namespace Dev_TicariOtomasyon
             while (dr.Read())
             {
                 cmbil.Properties.Items.Add(dr[0]);
+                vergiil.Properties.Items.Add(dr[0]);
             }
             sql.Connection().Close();
         }
@@ -47,7 +48,7 @@ namespace Dev_TicariOtomasyon
             cmbil.Text = "";
             cmbilce.Text = "";
             rchAdres.Text = "";
-            TxtVergiil.Text = "";
+            vergiil.Text = "";
         }
         
         SqlBaglanti sql = new SqlBaglanti();
@@ -60,6 +61,7 @@ namespace Dev_TicariOtomasyon
             //ComboBox ın text yazılabilmesini engelledim sadece veri seçilebilecek.
             cmbil.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             cmbilce.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            vergiil.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
 
             Txtid.Properties.NullValuePrompt = "Silme işlemi için !"; // Placeholder olarak kullanılacak metin
             Txtid.Properties.NullValuePromptShowForEmptyValue = true;
@@ -92,7 +94,7 @@ namespace Dev_TicariOtomasyon
             komut.Parameters.AddWithValue("@p7", cmbil.Text);
             komut.Parameters.AddWithValue("@p8", cmbilce.Text);
             komut.Parameters.AddWithValue("@p9", rchAdres.Text);
-            komut.Parameters.AddWithValue("@p10", TxtVergiil.Text);
+            komut.Parameters.AddWithValue("@p10", vergiil.Text);
 
             komut.ExecuteNonQuery();
             sql.Connection().Close();
@@ -118,7 +120,7 @@ namespace Dev_TicariOtomasyon
                 cmbil.Text = dr["IL"].ToString();
                 cmbilce.Text = dr["ILCE"].ToString();
                 rchAdres.Text = dr["ADRES"].ToString();
-                TxtVergiil.Text = dr["VERGIDAIREIL"].ToString();
+                vergiil.Text = dr["VERGIDAIREIL"].ToString();
             }
 
         }
@@ -151,7 +153,7 @@ namespace Dev_TicariOtomasyon
             komut.Parameters.AddWithValue("@P7", cmbil.Text);
             komut.Parameters.AddWithValue("@P8", cmbilce.Text);
             komut.Parameters.AddWithValue("@P9", rchAdres.Text);
-            komut.Parameters.AddWithValue("@P10", TxtVergiil.Text);
+            komut.Parameters.AddWithValue("@P10", vergiil.Text);
             komut.Parameters.AddWithValue("@P11", Txtid.Text);
 
             komut.ExecuteNonQuery();
@@ -160,5 +162,7 @@ namespace Dev_TicariOtomasyon
             Listele();
             Temizle();
         }
+
+        
     }
 }
