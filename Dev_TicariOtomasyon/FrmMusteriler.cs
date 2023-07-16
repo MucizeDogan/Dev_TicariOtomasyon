@@ -101,5 +101,64 @@ namespace Dev_TicariOtomasyon
             Temizle();
 
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            // pointer ile seçtiğim satırdaki değerleri dr ye ata
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            if (dr!=null)
+            {
+                Txtid.Text = dr["ID"].ToString();
+                TxtAd.Text = dr["AD"].ToString();
+                TxtSoyad.Text = dr["SOYAD"].ToString();
+                maskedTextBox1.Text = dr["TELEFON"].ToString();
+                maskedTextBox2.Text = dr["TELEFON2"].ToString();
+                mskTC.Text = dr["TC"].ToString();
+                TxtMail.Text = dr["MAIL"].ToString();
+                cmbil.Text = dr["IL"].ToString();
+                cmbilce.Text = dr["ILCE"].ToString();
+                rchAdres.Text = dr["ADRES"].ToString();
+                TxtVergiil.Text = dr["VERGIDAIREIL"].ToString();
+            }
+
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Kaydı silmek istediğinize emin misiniz?", "Kaydı Sil", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                SqlCommand komut = new SqlCommand("DELETE FROM TBL_MUSTERILER WHERE ID=@p1", sql.Connection());
+                komut.Parameters.AddWithValue("@p1", Txtid.Text);
+                komut.ExecuteNonQuery();
+                MessageBox.Show("Kayıt başarıyla silindi.", "Silindi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+           
+            sql.Connection().Close();
+            Listele();
+            Temizle();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("UPDATE TBL_MUSTERILER SET AD=@P1,SOYAD=@P2,TELEFON=@P3,TELEFON2=@P4,TC=@P5,MAIL=@P6,IL=@P7,ILCE=@P8,ADRES=@P9,VERGIDAIREIL=@P10 WHERE ID=@P11", sql.Connection());
+            komut.Parameters.AddWithValue("@P1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@P2", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@P3", maskedTextBox1.Text);
+            komut.Parameters.AddWithValue("@P4", maskedTextBox2.Text);
+            komut.Parameters.AddWithValue("@P5", mskTC.Text);
+            komut.Parameters.AddWithValue("@P6", TxtMail.Text);
+            komut.Parameters.AddWithValue("@P7", cmbil.Text);
+            komut.Parameters.AddWithValue("@P8", cmbilce.Text);
+            komut.Parameters.AddWithValue("@P9", rchAdres.Text);
+            komut.Parameters.AddWithValue("@P10", TxtVergiil.Text);
+            komut.Parameters.AddWithValue("@P11", Txtid.Text);
+
+            komut.ExecuteNonQuery();
+            sql.Connection().Close();
+            MessageBox.Show("Müşteri bilgiler başarılı şekilde güncellendi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Listele();
+            Temizle();
+        }
     }
 }
