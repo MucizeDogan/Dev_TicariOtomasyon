@@ -49,6 +49,7 @@
             this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
             this.txtTel3 = new System.Windows.Forms.MaskedTextBox();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.txtTel2 = new System.Windows.Forms.MaskedTextBox();
@@ -304,6 +305,7 @@
             // 
             // groupControl4
             // 
+            this.groupControl4.Controls.Add(this.BtnTemizle);
             this.groupControl4.Controls.Add(this.txtTel3);
             this.groupControl4.Controls.Add(this.labelControl14);
             this.groupControl4.Controls.Add(this.txtTel2);
@@ -318,6 +320,18 @@
             this.groupControl4.Size = new System.Drawing.Size(326, 432);
             this.groupControl4.TabIndex = 26;
             this.groupControl4.Text = "groupControl4";
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnTemizle.Appearance.Options.UseFont = true;
+            this.BtnTemizle.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("BtnTemizle.ImageOptions.SvgImage")));
+            this.BtnTemizle.Location = new System.Drawing.Point(41, 203);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(187, 40);
+            this.BtnTemizle.TabIndex = 26;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // txtTel3
             // 
@@ -804,5 +818,6 @@
         private System.Windows.Forms.RichTextBox rchOzlKod2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.RichTextBox rchOzlKod1;
+        private DevExpress.XtraEditors.SimpleButton BtnTemizle;
     }
 }

@@ -116,7 +116,9 @@ namespace Dev_TicariOtomasyon
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+           
             SqlCommand komut = new SqlCommand("INSERT INTO TBL_FIRMALAR (AD,YETKILIGOREV,YETKILIADSOYAD,YETKILITC,SEKTOR,TELEFON1,TELEFON2,TELEFON3,MAIL,IL,ILCE,VERGIDAIREIL,ADRES,OZELKOD1,OZELKOD2,OZELKOD3) VALUES (@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8,@P9,@P10,@P11,@P12,@P13,@P14,@P15,@P16)", sql.Connection());
+            
             komut.Parameters.AddWithValue("@P1", txtAd.Text);
             komut.Parameters.AddWithValue("@P2", txtYGorev.Text);
             komut.Parameters.AddWithValue("@P3", txtYetkili.Text);
@@ -133,6 +135,11 @@ namespace Dev_TicariOtomasyon
             komut.Parameters.AddWithValue("@P14", txtOzlKod1.Text);
             komut.Parameters.AddWithValue("@P15", txtOzlKod2.Text);
             komut.Parameters.AddWithValue("@P16", txtOzlKod3.Text);
+            if (string.IsNullOrWhiteSpace(txtAd.Text) || string.IsNullOrWhiteSpace(txtSektor.Text) || string.IsNullOrWhiteSpace(txtYetkili.Text))
+            {
+                MessageBox.Show("Lütfen Ad, Sektör alanları doldurunuz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             komut.ExecuteNonQuery();
             sql.Connection().Close();
             MessageBox.Show("Firma sisteme başarıyla eklendi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -199,6 +206,11 @@ namespace Dev_TicariOtomasyon
             }
             
             Listele();
+            Temizle();
+        }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
             Temizle();
         }
     }
