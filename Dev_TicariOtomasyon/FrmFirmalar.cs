@@ -32,5 +32,30 @@ namespace Dev_TicariOtomasyon
         {
             Listele();
         }
+
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle); //Seçilen satırın veri değerini dr ye atadık.
+            if (dr!=null)
+            {
+                txtId.Text = dr["ID"].ToString();
+                txtAd.Text = dr["AD"].ToString();
+                txtYGorev.Text = dr["YETKILIGOREV"].ToString();
+                txtYetkili.Text = dr["YETKILIADSOYAD"].ToString();
+                txtYTC.Text = dr["YETKILITC"].ToString();
+                txtSektor.Text = dr["SEKTOR"].ToString();
+                txtTel1.Text = dr["TELEFON1"].ToString();
+                txtTel2.Text = dr["TELEFON2"].ToString();
+                txtTel3.Text = dr["TELEFON3"].ToString();
+                txtMail.Text = dr["MAIL"].ToString();
+                cmbil.Text = dr["IL"].ToString();
+                cmbilce.Text = dr["ILCE"].ToString();
+                vergiil.Text = dr["VERGIDAIREIL"].ToString();
+                rchAdres.Text = dr["ADRES"].ToString();
+                txtOzlKod1.Text = dr["OZELKOD1"].ToString();
+                txtOzlKod2.Text = dr["OZELKOD2"].ToString();
+                txtOzlKod3.Text = dr["OZELKOD3"].ToString();
+            }
+        }
     }
 }
