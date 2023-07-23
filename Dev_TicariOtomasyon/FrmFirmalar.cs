@@ -45,6 +45,7 @@ namespace Dev_TicariOtomasyon
             cmbil.Text = "";
             cmbilce.Text = "";
             rchAdres.Text = "";
+            txtAd.Focus();
         }
 
         void sehirListesi()
@@ -59,11 +60,23 @@ namespace Dev_TicariOtomasyon
             sql.Connection().Close();
         }
 
+        void carikodAciklama()
+        {
+            SqlCommand komut = new SqlCommand("SELECT FIRMAKOD1 FROM TBL_KODLAR", sql.Connection());
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                rchOzlKod1.Text = dr[0].ToString();
+            }
+            sql.Connection().Close();
+        }
+
         private void FrmFirmalar_Load(object sender, EventArgs e)
         {
             Listele();
             Temizle();
             sehirListesi();
+            carikodAciklama();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
