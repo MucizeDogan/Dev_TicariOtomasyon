@@ -44,6 +44,7 @@ namespace Dev_TicariOtomasyon
             txtId.Text = "";
             cmbil.Text = "";
             cmbilce.Text = "";
+            vergiil.Text = "";
             rchAdres.Text = "";
             txtAd.Focus();
         }
@@ -77,6 +78,15 @@ namespace Dev_TicariOtomasyon
             Temizle();
             sehirListesi();
             carikodAciklama();
+
+
+            //ComboBox ın text yazılabilmesini engelledim sadece veri seçilebilecek.
+            cmbil.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            cmbilce.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            vergiil.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+
+            txtId.Properties.NullValuePrompt = "Silme işlemi için !"; // Placeholder olarak kullanılacak metin
+            txtId.Properties.NullValuePromptShowForEmptyValue = true;
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
@@ -143,6 +153,21 @@ namespace Dev_TicariOtomasyon
                 cmbilce.Properties.Items.Add(dr[0]);
             }
             sql.Connection().Close();
+        }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Kaydı silmek istediğinize emin misiniz?", "Kaydı Sil", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                SqlCommand komut = new SqlCommand("DELETE FROM TBL_FIRMALAR WHERE ID=@P1", sql.Connection());
+                komut.Parameters.AddWithValue("@P1", txtId.Text);
+                komut.ExecuteNonQuery();
+                MessageBox.Show("Kayıt başarıyla silindi.", "Silindi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            sql.Connection().Close();
+            Listele();
+            Temizle();
         }
     }
 }

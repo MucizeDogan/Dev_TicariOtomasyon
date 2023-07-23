@@ -267,6 +267,7 @@
             this.BtnSil.Size = new System.Drawing.Size(187, 40);
             this.BtnSil.TabIndex = 19;
             this.BtnSil.Text = "Sil";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGuncelle
             // 
@@ -572,8 +573,10 @@
             // 
             // rchOzlKod3
             // 
+            this.rchOzlKod3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rchOzlKod3.Location = new System.Drawing.Point(16, 414);
             this.rchOzlKod3.Name = "rchOzlKod3";
+            this.rchOzlKod3.ReadOnly = true;
             this.rchOzlKod3.Size = new System.Drawing.Size(305, 140);
             this.rchOzlKod3.TabIndex = 11;
             this.rchOzlKod3.Text = "";
@@ -590,8 +593,10 @@
             // 
             // rchOzlKod2
             // 
+            this.rchOzlKod2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rchOzlKod2.Location = new System.Drawing.Point(16, 241);
             this.rchOzlKod2.Name = "rchOzlKod2";
+            this.rchOzlKod2.ReadOnly = true;
             this.rchOzlKod2.Size = new System.Drawing.Size(305, 140);
             this.rchOzlKod2.TabIndex = 9;
             this.rchOzlKod2.Text = "";
@@ -608,8 +613,10 @@
             // 
             // rchOzlKod1
             // 
+            this.rchOzlKod1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.rchOzlKod1.Location = new System.Drawing.Point(16, 58);
             this.rchOzlKod1.Name = "rchOzlKod1";
+            this.rchOzlKod1.ReadOnly = true;
             this.rchOzlKod1.Size = new System.Drawing.Size(305, 150);
             this.rchOzlKod1.TabIndex = 0;
             this.rchOzlKod1.Text = "";

@@ -135,7 +135,7 @@ namespace Dev_TicariOtomasyon
                 komut.ExecuteNonQuery();
                 MessageBox.Show("Kayıt başarıyla silindi.", "Silindi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-           
+
             sql.Connection().Close();
             Listele();
             Temizle();
