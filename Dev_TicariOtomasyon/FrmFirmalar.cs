@@ -22,7 +22,7 @@ namespace Dev_TicariOtomasyon
 
         void Listele()
         {
-            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM TBL_FIRMALAR",sql.Connection());
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM TBL_FIRMALAR", sql.Connection());
             DataTable dt = new DataTable();
             da.Fill(dt);
             gridControl1.DataSource = dt;
@@ -92,7 +92,7 @@ namespace Dev_TicariOtomasyon
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
             DataRow dr = gridView1.GetDataRow(gridView1.FocusedRowHandle); //Seçilen satırın veri değerini dr ye atadık.
-            if (dr!=null)
+            if (dr != null)
             {
                 txtId.Text = dr["ID"].ToString();
                 txtAd.Text = dr["AD"].ToString();
@@ -128,14 +128,14 @@ namespace Dev_TicariOtomasyon
             komut.Parameters.AddWithValue("@P9", txtMail.Text);
             komut.Parameters.AddWithValue("@P10", cmbil.Text);
             komut.Parameters.AddWithValue("@P11", cmbilce.Text);
-            komut.Parameters.AddWithValue("@P12",vergiil.Text);
+            komut.Parameters.AddWithValue("@P12", vergiil.Text);
             komut.Parameters.AddWithValue("@P13", rchAdres.Text);
             komut.Parameters.AddWithValue("@P14", txtOzlKod1.Text);
             komut.Parameters.AddWithValue("@P15", txtOzlKod2.Text);
             komut.Parameters.AddWithValue("@P16", txtOzlKod3.Text);
             komut.ExecuteNonQuery();
             sql.Connection().Close();
-            MessageBox.Show("Firma sisteme başarıyla eklendi.", "BİLGİ", MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Firma sisteme başarıyla eklendi.", "BİLGİ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
             Temizle();
         }
@@ -166,6 +166,38 @@ namespace Dev_TicariOtomasyon
                 MessageBox.Show("Kayıt başarıyla silindi.", "Silindi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             sql.Connection().Close();
+            Listele();
+            Temizle();
+        }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Kaydı GÜNCELLEMEK istediğinize emin misiniz?", "Kaydı Güncelle", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                SqlCommand komut = new SqlCommand("UPDATE TBL_FIRMALAR SET AD=@P1,YETKILIGOREV=@P2,YETKILIADSOYAD=@P3,YETKILITC=@P4,SEKTOR=@P5,TELEFON1=@P6,TELEFON2=@P7,TELEFON3=@P8,MAIL=@P9,IL=@P10,ILCE=@P11,VERGIDAIREIL=@P12,ADRES=@P13,OZELKOD1=@P14,OZELKOD2=@P15,OZELKOD3=@P16 WHERE ID=@P17", sql.Connection());
+                komut.Parameters.AddWithValue("@P1", txtAd.Text);
+                komut.Parameters.AddWithValue("@P2", txtYGorev.Text);
+                komut.Parameters.AddWithValue("@P3", txtYetkili.Text);
+                komut.Parameters.AddWithValue("@P4", txtYTC.Text);
+                komut.Parameters.AddWithValue("@P5", txtSektor.Text);
+                komut.Parameters.AddWithValue("@P6", txtTel1.Text);
+                komut.Parameters.AddWithValue("@P7", txtTel2.Text);
+                komut.Parameters.AddWithValue("@P8", txtTel3.Text);
+                komut.Parameters.AddWithValue("@P9", txtMail.Text);
+                komut.Parameters.AddWithValue("@P10", cmbil.Text);
+                komut.Parameters.AddWithValue("@P11", cmbilce.Text);
+                komut.Parameters.AddWithValue("@P12", vergiil.Text);
+                komut.Parameters.AddWithValue("@P13", rchAdres.Text);
+                komut.Parameters.AddWithValue("@P14", txtOzlKod1.Text);
+                komut.Parameters.AddWithValue("@P15", txtOzlKod2.Text);
+                komut.Parameters.AddWithValue("@P16", txtOzlKod3.Text);
+                komut.Parameters.AddWithValue("@P17", txtId.Text);
+                komut.ExecuteNonQuery();
+                sql.Connection().Close();
+                MessageBox.Show("Kayıt başarıyla güncellendi.", "Güncellendi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
             Listele();
             Temizle();
         }
